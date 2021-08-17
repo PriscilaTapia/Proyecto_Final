@@ -1,10 +1,50 @@
-{% extends "layout.html" %}
-
-{% block title %} ABOUT {% endblock %}
+{% extends "layout.html" %} 
+{% load static %} 
+{% block title %} ABOUT {%endblock %} 
 
 
 {% block content %}
-    <h2>ABOUT DEL PROYECTO</h2>
+<h2>ABOUT DEL PROYECTO</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="{% static 'app_web\img\mujer.png'%}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Priscila T.</h5>
+          <p class="card-text">Estudiante.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img
+          src="{% static 'app_web\img\hombre.png'%}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Nicolás B.</h5>
+          <p class="card-text">Estudiante.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <p>
+    Esta página web pretende unificar noticias de diferentes sitios en relación
+    a la salud.
+  </p>
+  <p>
+    Creemos que es importante dar a conocer que, principalmente a raíz de la
+    pandemia, se han hecho visible enfermedades de las cuales, normalmente se
+    toman como tabú, como es el caso de la salud mental, y en otros casos como
+    es la nutrición se ve afectada por las limitantes que atraveaamos producto
+    de la cuarentena.
+  </p>
+</div>
 
 {% endblock %}

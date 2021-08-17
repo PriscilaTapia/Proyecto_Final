@@ -1,10 +1,28 @@
-{% extends "layout.html" %}
-
+{% extends "layout.html" %} 
+{% load static %}
 {% block title %} DETALLE {% endblock %}
 
 
 {% block content %}
-    <h2>DETALLE CUERPO DE LA NOTICIA</h2>
 
+
+      <div class="clearfix">
+        <img src="{% static 'app_web\img\deporte.jpg'%}" class="col-md-6 float-md-end mb-3 ms-md-3 rounded img-fluid img-thumbnail" style="max-width : 50%" alt="...">
+        <h2>Titulo de la noticia</h2>
+        <p>
+          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. 
+          We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+      
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this 
+          would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+      
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more 
+          insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+      </div>
 
 {% endblock %}
